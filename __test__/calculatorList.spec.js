@@ -1,6 +1,6 @@
 // calculatorList.spec.js
 
-const CalculatorList = require('./calculatorList');
+const CalculatorList = require('../calculatorList');
 
 describe('CalculatorList', () => {
   let calculatorList;

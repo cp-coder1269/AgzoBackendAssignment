@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1705854451370" clover="3.2.0">
-  <project timestamp="1705854451370" name="All files">
+<coverage generated="1705856517140" clover="3.2.0">
+  <project timestamp="1705856517140" name="All files">
     <metrics statements="70" coveredstatements="65" conditionals="34" coveredconditionals="27" methods="10" coveredmethods="10" elements="114" coveredelements="102" complexity="0" loc="70" ncloc="70" packages="1" files="2" classes="2"/>
     <file name="calculator.js" path="/home/iftekhar/Code/AgzoBackendAssignment/calculator.js">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
