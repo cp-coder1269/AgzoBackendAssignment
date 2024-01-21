@@ -9,8 +9,8 @@ class CalculatorList {
 
   // Initialize a new calculator instance and add to the Calculator list
   init(operator, num1, num2) {
-    const id = this.lastAssignedId++;
     const result = this.calculate(operator, num1, num2);
+    const id = this.lastAssignedId++;
     const calculator = new Calculator(id, result, operator, num1, num2);
     this.calculatorList.set(id, calculator);
     return { result: calculator.resultStack[calculator.resultStack.length-1], totalOps: calculator.operatorStack.length, id: calculator.id };
@@ -68,8 +68,15 @@ class CalculatorList {
      return { success:true, message:`calculator ${id} is now reset` };
   }
 
+  validateNumber(num){ 
+    if (isNaN(num) || typeof num !== 'number') {
+        throw new Error('Invalid number');
+    }
+  }
   // Perform the actual calculation based on the operator
   calculate(operator, num1, num2) {
+    this.validateNumber(num1);
+    this.validateNumber(num2);
     switch (operator) {
       case 'add':
         return num1 + num2;
